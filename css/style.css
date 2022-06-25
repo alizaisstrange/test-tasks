@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 70%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2B3639;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+a:hover{
+    
+}
+
+.container {
+    display: block;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navigate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 104px;
+    height: 100vh;
+    background-color: #F8F8F8;
+    border-radius: 0px 35px 35px 0px;
+}
+
+.gamburger {
+    position: relative;
+    width: 18px;
+    height: 12px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 55px;
+}
+.gamburger:hover{
+    cursor: pointer;
+}
+.gamburger span{
+    display: block;
+    z-index: 200;
+    width: 18px;
+    margin-bottom: 3px;
+    height: 2px;
+    background-color: #2B3639;
+}
+
+.first{
+    transform: translate(128px, 0.4px) rotate(45deg);
+    transform-origin: left top;
+}
+
+.middle{
+    transform: scale(0);
+}
+
+.last{
+    transform: translate(123px, -8px) rotate(-45deg);
+    transform-origin: right bottom;
+}
+
+.logo {
+    margin-top: 51px;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.profile img {
+    width: 64px;
+    height: 64px;
+}
+
+.account-balance {
+    writing-mode: vertical-rl;
+    transform:rotate(180deg);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2B3639;
+    margin-top: 48px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 98px;
+    margin-bottom: 30px;
+}
+
+ul li:nth-last-child(n+2) {
+	margin-bottom: 19px;
+}
+
+.exit__button {
+    border: none;
+    background-color: #F8F8F8;
+    margin-top: auto;
+    margin-top: 109px;
+    margin-bottom: 50px;
+}
+
+.tr-popup {
+    display: none !important;
+}
+
+.navigate-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 100vh;
+    background-color: #F8F8F8;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 0px 35px 35px 0px;
+    padding: 0 53px;
+}
+
+.logo-min {
+    display: none;
+}
+
+.logo-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+
+.logo-active__title {
+    margin-top: 10px;
+}
+
+.profile-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.profile-active__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-active img {
+    width: 64px;
+    height: 64px;
+}
+
+.profile-active a{
+    margin-right: 21px;
+}
+
+.profile-active button {
+    border: none;
+    background-color: #5a595900;
+    cursor: pointer;
+}
+
+.profile-active__name {
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #2B3639;
+}
+
+.score-active {
+    padding: 21px 25px 21px 20px;
+    width: 261px;
+    height: 184px;
+    margin-top: 25px;
+    background: linear-gradient(138.66deg, #F5B841 -19.7%, #FF6A6A 90.34%);
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.score-active::before {
+    content: "";
+    background-image: url("../img/mask-card.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    background-position: right;
+}
+
+.score-active__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    height: 24px;
+    color: #FFFFFF;
+}
+
+.score-active__middle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+.score-active__middle p {
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.account-balance-active {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
+
+.score-active__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.menu-active {
+    justify-self: flex-start;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.menu__list-active svg {
+    margin-right: 10px;
+}
+
+.menu__list-active li a{
+    font-family: "Muller";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2B3639;
+    transition: 200ms;
+}
+
+.menu__list-active li:hover a{
+    color: #FF6A6A;
+    transition: 200ms;
+}
+
+.menu__list-active li a svg use {
+    transition: 200ms;
+}
+
+.menu__list-active li:hover a svg use {
+    fill: #FF6A6A;
+    transition: 200ms;
+}
+
+.additional-nav {
+    width: 100%;
+    display: flex;
+    font-family: "Muller";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2B3639;
+    margin-top: 100px;
+    display: none;
+}
+
+.exit-active {
+    align-self: flex-start;
+}
+
+.exit__button {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2B3639;
+    transition: 200ms;
+}
+
+.exit__button:hover {
+    color: #FF6A6A;
+    transition: 200ms;
+}
+
+.exit__button svg {
+    margin-right: 7px;
+}
+
+.elipsis {
+    display: none;
+}
+
+.no-active {
+    display: none;
+}

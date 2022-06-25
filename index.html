@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger menu</title>
+  <link rel="preload" as="font" href="./fonts/MullerLight.woff2">
+  <link rel="preload" as="font" href="./fonts/MullerLight.woff">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&Nunito:wght@300;400;500;700&family=Press+Start+2P&family=Russo+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div class="container">
+        <div class="elipsis">
+            <svg class="icon elipsis-icon" width="15px" height="15px"><use xlink:href="../sprite.svg#elipsis"></use></svg>
+        </div>
+        <div class="navigate">
+            <div class="gamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <div class="profile">
+                <img src="./img/profile.png" alt="">
+            </div>
+            <div class="score">
+                <p class="account-balance">
+                    ₽4,570,80
+                </p>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#home"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#payments"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#replenishment"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#invoicing"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#history"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#marketplace"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#agent"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#open-store"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#loans"></use></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#gift-card"></use></svg>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="exit">
+                <button class="exit__button">
+                    <svg class="icon" width="20px" height="18px"><use xlink:href="../sprite.svg#exit"></use></svg>
+                </button>
+            </div>
+        </div>
+        <div class="navigate-active no-active">
+            <div class="logo-min">
+                <svg class="icon" width="14px" height="21px"><use xlink:href="../sprite.svg#monkey"></use></svg>
+            </div>
+            <div class="gamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo-active">
+                <img src="./img/logo.svg" alt="">
+                <h1 class = "logo-active__title">Monster Pay</h1>
+            </div>
+            <div class="profile-active">
+                <div class="profile-active__nav">
+                    <img src="./img/profile.png" alt="">
+                    <div class = "profile-active__link">
+                        <a href="#">
+                            <svg class="icon" width="18px" height="19px"><use xlink:href="../sprite.svg#qr"></use></svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon" width="18px" height="19px"><use xlink:href="../sprite.svg#monkey"></use></svg>
+                        </a>
+                        <button href="#">
+                            <svg class="icon" width="18px" height="19px"><use xlink:href="../sprite.svg#elipsis"></use></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="profile-active__name">
+                    <p>
+                        Смирнов Алексей Антонович
+                    </p>
+                </div>
+                
+            </div>
+            <div class="score-active">
+                <div class="score-active__top">
+                    <svg class="icon" width="29px" height="28px"><use xlink:href="../sprite.svg#logo"></use></svg>
+                    <p>MonsterPay счёт</p>
+                </div>
+                <div class="score-active__middle">
+                    <p>Баланс</p>
+                    <p class="account-balance-active">
+                        ₽4,570,80
+                    </p>
+                </div>
+                <div class="score-active__bottom">
+                    <p>5294 2436 4780 2468</p>
+                    <p>12/24</p>
+                </div>
+            </div>
+            <nav class="menu-active">
+                <ul class="menu__list-active">
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#home"></use></svg>
+                        Главная
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#payments"></use></svg>
+                        Платежи и переводы
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#replenishment"></use></svg>
+                        Пополнить
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#invoicing"></use></svg>
+                        Выставить счёт
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#history"></use></svg>
+                        История транзакций
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#marketplace"></use></svg>
+                        Маркетплейс
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#agent"></use></svg>
+                        Стать агентом
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#open-store"></use></svg>
+                        Открыть магазин
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#loans"></use></svg>
+                        Займы
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#gift-card"></use></svg>
+                        Купить подарочную карту
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="additional-nav">
+                <ul>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#profile"></use></svg>
+                        Профиль
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#faq"></use></svg>
+                        FAQ
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="icon" width="15px" height="15px"><use xlink:href="../sprite.svg#tikets"></use></svg>
+                        Тикеты
+                    </a></li>
+                </ul>
+            </div>
+            <div class="exit-active">
+                <button class="exit__button">
+                    <svg class="icon" width="20px" height="18px"><use xlink:href="../sprite.svg#exit"></use></svg>
+                    Выйти
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $('.gamburger').click(function(){
+            $('span:nth-child(1)').toggleClass('first');
+            $('span:nth-child(2)').toggleClass('middle');
+            $('span:nth-child(3)').toggleClass('last');
+            $('.navigate-active').toggleClass('no-active');
+            $('.navigate').toggleClass('no-active');
+            $('.elipsis-icon').removeClass('no-active');
+        });
 
+        $('.elipsis').click(function(){
+            $('span:nth-child(1)').toggleClass('first');
+            $('span:nth-child(2)').toggleClass('middle');
+            $('span:nth-child(3)').toggleClass('last');
+            $('.navigate-active').toggleClass('no-active');
+            $('.navigate').toggleClass('no-active');
+            $('.elipsis-icon').toggleClass('no-active');
+        });
+    </script>
+</body>
+</html>
